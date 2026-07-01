@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meal Planner PRO</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<header>
+  <h1>🍽 Meal Planner PRO</h1>
+
+  <nav>
+    <button onclick="showTab('planner')">📅 Planner</button>
+    <button onclick="showTab('recipes')">🍽 Recetas</button>
+    <button onclick="showTab('shopping')">🛒 Compra</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- ================= PLANNER ================= -->
+<section id="planner" class="tab active">
+
+  <div id="weekGrid"></div>
+
+  <aside>
+    <h3>Recetas</h3>
+    <input id="search" placeholder="Buscar..."/>
+    <div id="recipeList"></div>
+  </aside>
+
+</section>
+
+<!-- ================= RECIPES ================= -->
+<section id="recipes" class="tab">
+
+  <h2>🍽 Recetas</h2>
+
+  <div class="form">
+    <input id="name" placeholder="Nombre"/>
+    <input id="category" placeholder="Categoría"/>
+    <textarea id="ingredients" placeholder="Ingredientes (uno por línea)"></textarea>
+    <button onclick="addRecipe()">Guardar</button>
+  </div>
+
+  <div id="recipesView"></div>
+
+</section>
+
+<!-- ================= SHOPPING ================= -->
+<section id="shopping" class="tab">
+
+  <h2>🛒 Lista de la compra</h2>
+
+  <div id="shoppingList"></div>
+
+</section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
