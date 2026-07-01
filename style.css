@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+}
+
+header {
+  background: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+nav button {
+  margin: 0 5px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+main {
+  padding: 10px;
+}
+
+.tab {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+/* PLANNER */
+#planner {
+  display: flex;
+  gap: 10px;
+}
+
+#weekGrid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.day {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 150px;
+}
+
+.slot {
+  min-height: 50px;
+  border: 1px dashed #ccc;
+  margin-top: 5px;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+/* RECIPES */
+#recipeList {
+  margin-top: 10px;
+}
+
+.card {
+  background: white;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+  cursor: grab;
+}
+
+/* SHOPPING */
+#shoppingList {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.item {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+/* FORM */
+.form input, .form textarea {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+}
